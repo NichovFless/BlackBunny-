@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #d10f5d;
+  }
+
+h1 {
+margin-bottom: 50px;
+color: #ece2e7;
+text-align: center;
+}
+
+.button-container {
+display: flex;
+gap: 20px; /* khoảng cách giữa 2 nút */
+}
+
+button {
+padding: 15px 30px;
+font-size: 18px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+#yesBtn {
+background-color: #f18fc0;
+color: white;
+}
+
+#noBtn {
+background-color: #cccccc;
+color: black;
+}

@@ -1,0 +1,82 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.book{
+    width: 400px;
+    height: 370px;
+    perspective: 2000px;
+    position: relative;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(red, green, blue);
+}
+.front, .back,.frontfirst,.front2,.front3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden ;
+    border-radius: 5px ;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.front,.frontfirst,.front2,.front3{
+    background: #ffffff ;
+}
+.frontfirst {
+    background-image: url('559008447_1837145913561064_6565618920741064381_n.jpg');
+    background-size: cover;        /* Ảnh phủ kín khung */
+    background-position: center;   /* Căn giữa ảnh */
+    background-repeat: no-repeat;  /* Không lặp */
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.front2{
+    font-size: 30px;
+}
+.front3{
+    text-align: center;
+    font-size: 21px;
+}
+.back{
+    background: #ffffff;
+    transform: rotateY(180deg);
+}
+.page.flipped{
+    transform: rotateY(-180deg);
+    z-index: 0;
+}
+.page:nth-child(1) {z-index: 5;}
+.page:nth-child(2) {z-index: 4;}
+.page:nth-child(3) {z-index: 3;}
+.page:nth-child(4) {z-index: 2;}
+.page:nth-child(5) {z-index: 1;}
+button{
+    padding: 10px 20px;
+    margin-top: 20px ;
+    border: none;
+    border-radius: 6px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 1s;
+}
+button:hover{
+    background: #555;
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tieu de thui dung de y</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div>
+    <div class="search-wrap" role="search" aria-label="Thanh tìm kiếm minh hoạ">
+      <div class="search" aria-hidden="false">
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <!-- readonly để không thể gõ, tabindex -1 để không nhận focus bằng tab -->
+        <input id="searchInput" type="text" readonly tabindex="-1" placeholder="" aria-label="">
+      </div>
+
+      <button id="autoBtn" class="btn" aria-controls="searchInput" aria-label="Gõ tự động">Ấn vô đây đi</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

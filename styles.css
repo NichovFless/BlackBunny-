@@ -1,0 +1,77 @@
+:root{
+      --bg1: #5a0238; /* tím đậm */
+      --bg2: #bf3fbf; /* tím nhạt */
+      --glass: rgba(255,255,255,0.08);
+      --accent: rgba(255,255,255,0.95);
+    }
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+    body{
+      display:grid;
+      place-items:center;
+      background: linear-gradient(135deg,var(--bg1), var(--bg2));
+      color:var(--accent);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Container trung tâm */
+    .search-wrap{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      width:min(880px, 92%);
+      padding:22px;
+      border-radius:16px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+      backdrop-filter: blur(6px) saturate(120%);
+    }
+
+    /* Thanh tìm kiếm trong suốt */
+    .search{
+      flex:1;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:12px 16px;
+      border-radius:12px;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.18);
+      min-height:46px;
+    }
+    .search input{
+      background: transparent;
+      border:0;
+      outline: none;
+      width:900%;
+      font-size:14px;
+      color:var(--accent);
+      caret-color: transparent; /* ẩn con trỏ vì không thể gõ */
+    }
+    .search input::placeholder{color:rgba(255,255,255,0.6)}
+
+    /* Nút bấm bên cạnh */
+    .btn{
+      appearance:none;
+      -webkit-appearance:none;
+      border:0;
+      padding:12px 16px;
+      border-radius:10px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06));
+      color:var(--accent);
+      font-weight:600;
+      cursor:pointer;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .btn:active{transform: translateY(1px) scale(.998)}
+
+    /* Icon nhỏ trong input */
+    .icon{opacity:0.9}
+
+    /* Ghi chú nhỏ */
+    .hint{margin-top:12px;text-align:center;color:rgba(255,255,255,0.75);font-size:13px}
+
+    /* Make sure user cannot type in the input with keyboard or paste */
+    /* We'll still allow programmatic value changes from JS */
+    input[readonly]{user-select:none;}
