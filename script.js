@@ -4,10 +4,9 @@
 
   const messages = [
     "Hey,",
-    "Cái này chỉ là hàng tặng kèm :>",
-    "Vài lời chúc mà tôi ngại nói",
-    "Nói ở đây diện tích hơi nhỏ nhỉ",
-    "Vậy bạn ấn cái chữ này đi 👉"
+    "Vài lời chúc tôi ngại nói",
+    "Nói ở đây diện tích hơi nhỏ",
+    "Bạn ấn cái chữ này đi 👉"
   ];
 
   let typingTimer = null;
