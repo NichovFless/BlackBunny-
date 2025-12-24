@@ -56,6 +56,7 @@ body{
 .front4{
      text-align: center;
      font-size: 21px;
+}
 .back{
     background: #ffffff;
     transform: rotateY(180deg);
